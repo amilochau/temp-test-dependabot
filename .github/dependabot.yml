@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: dotnet-sdk
+  - package-ecosystem: nuget #dotnet-sdk
     directory: /
     schedule:
       interval: daily
