@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, World - this is a change to test if dependency review blocks the PR!");
         }
     }
 }
