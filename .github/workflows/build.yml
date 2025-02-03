@@ -1,10 +1,13 @@
-name: Dependency submission
-run-name: Dependency submission - ${{ github.ref }}
+name: Build
+run-name: Build - ${{ github.ref }}
 
 on:
-  workflow_dispatch:
   push:
+    branches:
+    - main
   pull_request:
+    branches:
+    - main
 
 permissions: 
   id-token: write
@@ -27,3 +30,4 @@ jobs:
         if: github.event_name == 'pull_request'
         with:
           fail-on-severity: high
+          warn-on-openssf-scorecard-level: 5
