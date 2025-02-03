@@ -24,5 +24,6 @@ jobs:
         uses: advanced-security/component-detection-dependency-submission-action@v0.0.4
       - name: Dependency Review # Note that this step must be in the same job than the dependency submission - and after it
         uses: actions/dependency-review-action@v4
+        if: github.event_name == 'pull_request'
         with:
           fail-on-severity: high
