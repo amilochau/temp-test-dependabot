@@ -4,6 +4,7 @@
     <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
   </PropertyGroup>
   <ItemGroup>
+    <PackageVersion Include="FluentAssertions" Version="8.0.1" />
     <PackageVersion Include="Microsoft.Azure.Cosmos" Version="3.46.1" />
   </ItemGroup>
 </Project>
