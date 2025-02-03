@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
       - run: dotnet build ./ConsoleApp1
       - name: Component detection 
         uses: advanced-security/component-detection-dependency-submission-action@v0.0.4
