@@ -4,6 +4,7 @@ run-name: Dependency submission - ${{ github.ref }}
 on:
   workflow_dispatch:
   push:
+  pull_request:
 
 permissions: 
   id-token: write
@@ -21,4 +22,7 @@ jobs:
       - run: dotnet build ./ConsoleApp1
       - name: Component detection 
         uses: advanced-security/component-detection-dependency-submission-action@v0.0.4
-
+      - name: Dependency Review # Note that this step must be in the same job than the dependency submission - and after it
+        uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high
