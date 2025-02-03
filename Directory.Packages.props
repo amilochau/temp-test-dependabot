@@ -3,11 +3,4 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
   </PropertyGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageVersion Include="Microsoft.Azure.Cosmos" Version="3.3.0" />
-    <PackageVersion Include="System.Drawing.Common" Version="5.0.0" />
-    <PackageVersion Include="System.Text.Json" Version="7.0.4" />
-  </ItemGroup>
 </Project>
