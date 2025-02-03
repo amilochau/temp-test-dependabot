@@ -3,4 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Azure.Cosmos" Version="3.13.0" />
+  </ItemGroup>
 </Project>
